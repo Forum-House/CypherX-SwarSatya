@@ -1,0 +1,18 @@
+{
+  "name": "swarsatya-blockchain",
+  "version": "1.0.0",
+  "description": "SwarSatya fraud registry smart contract + deployment tooling (Polygon Amoy testnet)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:amoy": "hardhat run scripts/deploy.js --network amoy",
+    "authorize-reporter": "hardhat run scripts/authorize-reporter.js --network amoy"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "hardhat": "^2.22.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
